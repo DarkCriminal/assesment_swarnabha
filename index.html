@@ -31,8 +31,8 @@
             border: transparent;
             border-radius: 15px;
         }
-        
-        form{
+
+        form {
             padding-left: 11%;
 
         }
@@ -70,7 +70,7 @@
 
         #checkbox {
             width: 14px;
-            
+
         }
 
         #check {
@@ -92,12 +92,22 @@
             border-radius: 5px;
         }
 
+        .btn>a {
+            text-decoration: none;
+            color: #fff;
+        }
+
         footer {
             padding-bottom: 5px;
             padding-top: 14px;
             display: flex;
             justify-content: center;
             font-size: 10px;
+        }
+
+        .star {
+            color: red;
+            font-weight: 700;
         }
     </style>
 </head>
@@ -116,23 +126,24 @@
 
             <div class="inputsec">
 
-                <label for="name" class="label">Name
-                    <input type="text" name="name" id="name" placeholder="Name">
+                <label for="name" class="label">Name <span class="star">*</span>
+                    <input type="text" name="name" id="name" placeholder="Name" required>
                 </label>
 
-                <label for="email" class="label">Email
-                    <input type="email" name="email" id="email" placeholder="Email">
+                <label for="email" class="label">Email <span class="star">*</span>
+                    <input type="email" name="email" id="email" placeholder="Email" required>
                 </label>
 
-                <label for="name" class="label">Password
-                    <input type="password" name="password" id="password" placeholder="Password">
+                <label for="name" class="label">Password <span class="star">*</span>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
                 </label>
 
                 <label for="checkbox" class="label" id="check">
                     <input type="checkbox" name="checkbox" id="checkbox"> Remember Me
                 </label>
 
-                <button class="btn" id="btn" alt="go" aria-required="true"><a href="login.html" target="_blank" rel="noopener noreferrer">Sign Up</a></button>
+                <button class="btn" id="btn" alt="go" aria-required="true"><a href="login.html" target="_blank"
+                        rel="noopener noreferrer">Sign Up</a></button>
 
             </div>
 
