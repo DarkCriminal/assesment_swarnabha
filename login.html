@@ -78,6 +78,15 @@
             justify-content: space-between;
         }
 
+        button {
+            background-color: transparent;
+            border: transparent;
+        }
+
+        button>a {
+            text-decoration: none;
+        }
+
         #btn {
             width: 234px;
             height: 36px;
@@ -89,10 +98,6 @@
             border-radius: 5px;
         }
 
-        #btn>a {
-            text-decoration: none;
-            color: #fff;
-        }
 
         footer {
             padding-bottom: 5px;
@@ -119,19 +124,20 @@
             <div class="inputsec">
 
                 <label for="email" class="label">Email
-                    <input type="email" name="email" id="email" placeholder="Email">
+                    <input type="email" name="email" id="email" placeholder="Email" required>
                 </label>
 
                 <label for="name" class="label">Password
-                    <input type="password" name="password" id="password" placeholder="Password">
+                    <input type="password" name="password" id="password" placeholder="Password" required>
                 </label>
 
                 <label for="checkbox" class="label" id="check">
                     <input type="checkbox" name="checkbox" id="checkbox"> Remember Me
                 </label>
 
-                <button class="btn" id="btn" alt="go" aria-required="true"><a href="subcribtion_plan.html"
-                        target="_blank" rel="noopener noreferrer">Login</a></button>
+                <button>
+                    <a href="subcribtion_plan.html" target="_blank" rel="noopener noreferrer"><input type="button" value="Login" id="btn" required></a>
+                </button>
 
             </div>
 
