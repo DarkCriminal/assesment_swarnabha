@@ -81,6 +81,15 @@
             justify-content: space-between;
         }
 
+        button {
+            background-color: transparent;
+            border: transparent;
+        }
+
+        button>a {
+            text-decoration: none;
+        }
+
         #btn {
             width: 234px;
             height: 36px;
@@ -90,11 +99,6 @@
             background-color: rgb(56, 85, 171);
             border: transparent;
             border-radius: 5px;
-        }
-
-        .btn>a {
-            text-decoration: none;
-            color: #fff;
         }
 
         footer {
@@ -142,8 +146,10 @@
                     <input type="checkbox" name="checkbox" id="checkbox"> Remember Me
                 </label>
 
-                <button class="btn" id="btn" alt="go" aria-required="true"><a href="login.html" target="_blank"
-                        rel="noopener noreferrer">Sign Up</a></button>
+                <button> <a href="" target="_blank" rel="noopener noreferrer"> <input type="button" value="Sign Up"
+                            id="btn" alt="Redirecting to Login page" required>
+                    </a>
+                </button>
 
             </div>
 
